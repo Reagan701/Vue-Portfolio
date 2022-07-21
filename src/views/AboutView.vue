@@ -65,7 +65,6 @@
                 <div class="card w-50 py-1" style="height:170px">
                     <i id="skillIcon" class="fa-brands fa-html5"></i>
                     <div class="card-body">
-                        Text about html
                     </div>
                 </div>
             </div>
@@ -73,7 +72,6 @@
                 <div class="card w-50 py-1" style="height:115px">
                     <i id="skillIcon" class="fa-brands fa-html5"></i>
                     <div class="card-body">
-                        Text about html
                     </div>
                 </div>
             </div>
