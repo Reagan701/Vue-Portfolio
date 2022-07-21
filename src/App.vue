@@ -2,12 +2,12 @@
 <div class="cursor"></div>
   <Navbar />
   <main class="min-vh-100">
-    <router-view />
-    <!-- v-slot="{Component}">
+    <router-view 
+    v-slot="{Component}">
       <transition name="router" mode="out-in">
         <component :is="Component" ></component>
       </transition>
-    </router-view> -->
+    </router-view>
   </main>
 </template>
 
@@ -23,26 +23,24 @@ function check(event){
     event.preventDefault();
     if(isDay){
       isDay = !isDay;
-      document.querySelector(':root').style.setProperty('--background-color',"#071022");
+      document.querySelector(':root').style.setProperty('--background-color',"7,16,34");
       document.querySelector(':root').style.setProperty('--color',"#2da0ed")
       document.querySelector(':root').style.setProperty('--text-color',"rgb(173,186, 194)");
-      // document.querySelector('.sun').classList.remove('goUp');
-      // document.querySelector('.sun').classList.add('goDown');
-      // document.querySelector('.moon').classList.add('goUp');
-      // document.querySelector('.moon').classList.remove('goDown');
-      // document.querySelector('.moon').style.display = "block";
-      // document.querySelector('.sun').style.display = "none";
+      document.querySelector(':root').style.setProperty('--shadow',"0px 1rem 3rem rgba(0,0,0,0.6)");
+      document.querySelector(':root').style.setProperty('--brightness',"0.7");
+      document.querySelector(':root').style.setProperty('--border',"2px");
+      // document.querySelector('#sun').style.display = "none";
+      // document.querySelector('#moon').style.display = "block";
     }else{
       isDay = !isDay;
-      document.querySelector(':root').style.setProperty('--background-color',"rgb(230, 232, 236)");
+      document.querySelector(':root').style.setProperty('--background-color',"230, 232, 236");
       document.querySelector(':root').style.setProperty('--color',"#628aa5")
       document.querySelector(':root').style.setProperty('--text-color',"rgba(var(--bs-body-color-rgb),.75)");
-      // document.querySelector('.sun').classList.add('goUp');
-      // document.querySelector('.sun').classList.remove('goDown');
-      // document.querySelector('.moon').classList.remove('goUp');
-      // document.querySelector('.moon').classList.add('goDown');
-      // document.querySelector('.moon').style.display = "none";
-      // document.querySelector('.sun').style.display = "block";
+      document.querySelector(':root').style.setProperty('--shadow',"0px 1rem 3rem rgba(0,0,0,0.175)");
+      document.querySelector(':root').style.setProperty('--brightness',"1");
+      document.querySelector(':root').style.setProperty('--border',"3px");
+      // document.querySelector('#sun').style.display = "block";
+      // document.querySelector('#moon').style.display = "none";
     }
   }
 }
@@ -76,19 +74,37 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
 main{
-  margin-left: 200px
+  transition: all 0.3s linear;
 }
+
+@media screen and (min-width:1600px) {
+  main{
+    margin-left: 278.725px
+  }
+}
+
 body{
   transition: all 0.3s linear;
-  background-color:var(--background-color);
+  background-color:rgb(var(--background-color));
 }
 
 :root{
-  --background-color:rgb(230, 232, 236);
+  --background-color:230, 232, 236;
   --color:#628aa5;
   --text-color:rgba(var(--bs-body-color-rgb),.75);
+  --shadow: 0px 1rem 3rem rgba(0,0,0,0.175);
+  --brightness: 1
+  --border: 3px
 }
+
+@media (hover:none) {
+  .cursor{
+    display: none;
+  }  
+}
+
 
 *{
   font-family: 'Poppins',sans-serif;
@@ -97,7 +113,7 @@ body{
 html,body{
   overflow-x: hidden;
 }
-
+/* 
 .router-enter-from{
   opacity: 0;
   transform: translateY(100px);
@@ -114,21 +130,15 @@ html,body{
 
 .router-leave-active{
   transition: all 0.5s ease-in;
-}
-
-/* #paddingLeft{
-  margin-left:332px;
-  margin-right:332px;
 } */
-
 .cursor{
   position:fixed;
   top: 0;
   left: 0;
   width: 10px;
-  background-color:rgb(230, 184, 0);
+  /* background-color:var(--color); */
   height: 10px;
-  box-shadow: 0px 1rem 4rem #f4c300;
+  box-shadow: 0px 0rem 9rem 1.5rem var(--color);
   border-radius: 50%;
 }
 

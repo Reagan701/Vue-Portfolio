@@ -11,8 +11,8 @@
                 <a target="_blank" href="https://codepen.io/reagan701"><i class="fa-brands fa-codepen"></i></a>
             </div>
         </div>
-        <p class="pt-4" style="color:#9b9d9e"> Reagan Carolussen <br>2022 © Copyright </p>
-        <p style="color:#9b9d9e"> Made by Reagan Carolussen </p>
+        <p class="p-4" style="color:#9b9d9e"> Reagan Carolussen <br>2022 © Copyright </p>
+        <p class="px-4" style="color:#9b9d9e"> Made by Reagan Carolussen </p>
     </div>
 </template>
 
@@ -32,24 +32,5 @@ a{
         position: fixed;
         top:0;
         transition: all 0.3s linear;
-    }
-
-    @media screen and (max-width:996px) {
-        #navbar{
-            
-            left:-200px;
-        }
-        #footer{
-            padding: 0px 1rem 0px ;
-        }
-    }
-    @media screen and (min-width:997px) {
-        #navbar{
-            
-            left: 0;
-        }
-        #footer{
-            padding: 0px 1rem 0px ;
-        }
     }
 </style>

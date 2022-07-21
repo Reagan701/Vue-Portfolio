@@ -1,8 +1,8 @@
 <template>
   <div class="contact">
-    <div id="paddingLeft" class="container vh-100 d-flex flex-column justify-content-center align-items-center my-5 text-center">
-            <h4 class="mt-1 fs-1">Contact</h4>
-            <h6 class="fs-6">Get in touch</h6>
+    <div class="container d-flex justify-content-center flex-column min-vh-100">
+            <h4 id="blueColor" class="my-1 display-1">Contact</h4>
+            <h6 id="blueColor" class="fs-5">Send me a message</h6>
             <form action="https://formspree.io/f/xayvrbqy" method="POST" class="w-100 my-5 py-5 mx-auto">
                 <div class="row">
                     <div class="col-md-4">
@@ -56,16 +56,16 @@ export default {
 <style scoped>
 
 .hoverButton{
-    border-color: #190844;
-    color: #190844;
+    border-color: var(--color);
+    color: var(--color);
     font-weight: 900;
     background-color: transparent;
-    border: 0.188rem solid #190844;
+    border: 0.188rem solid var(--color);
     transition: all 0.2s ease-in-out;
 }
 
 .hoverButton:hover {
-    background-color: #190844;
+    background-color: var(--color);
     color: white;
 }
 
@@ -75,13 +75,21 @@ export default {
     right: 1.25rem;
 }
 
+#blueColor{
+    color:var(--color)
+}
+
+:placeholder{
+    color:var(--text-color)
+}
+
 #inputContainer{
     position: relative;
 }
 
 .form-control{
     border-radius: 0%;
-    border:0.2rem solid var(--color)
+    border-bottom: var(--border) solid var(--color);
 }
 
 </style>

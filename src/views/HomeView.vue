@@ -1,7 +1,7 @@
 <template>
   <div class="home vh-100" >
       <!-- <div class="sun"><i class="fa-solid fa-sun"></i></div> -->
-      <div class="moon"><i class="fa-solid fa-moon"></i></div>
+      <!-- <div class="moon"><i class="fa-solid fa-moon"></i></div> -->
     <div style="height:100%" class="d-flex container justify-content-center align-items-center">
 
       <h1>Hi, I am Reagan <br> An Aspiring Web Developer</h1>
@@ -73,6 +73,7 @@ export default {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
 
 #topImage{

@@ -1,14 +1,11 @@
 <template>
-  <div class="mb-5" style="position: relative;">
+  <div id="progressBar" style="height:26px;position: relative;">
     <div style="position: relative; margin-bottom:10px;" class=" d-flex justify-content-between align-items-center">
-        <h4> {{Title}} </h4>
-        <i :class="icon" :style="color"></i>
-        <h4> {{width}} </h4>
     </div>
         <div class="progress" id="ProgressBarTop" :style="widthStyle">
-            <div class="progress-bar w-100" role="progressbar" :style="backgroundColor" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar w-100" role="progressbar" style="background-color: var(--color)" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">{{width}}</div>
             </div>
-            <div style="border-radius: 0%" class="progress">
+            <div style="border-radius: 0%;background-color:var(--text-color)" class="progress">
             <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
     </div>
@@ -16,8 +13,7 @@
 
 <script>
 export default {
-    props:["backgroundColor","icon","color","width","widthStyle","Title"]
-
+    props:["widthStyle","width"]
 }
 </script>
 
@@ -25,6 +21,9 @@ export default {
 
 #ProgressBarTop{
     border-radius: 0% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 h4{

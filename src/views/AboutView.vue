@@ -1,11 +1,8 @@
 <template>
   <div class="about">
-    <div id="paddingLeft" class="container h-100 mt-5 d-flex justify-content-center align-items-center flex-column">
+    <div class="container d-flex justify-content-center flex-column min-vh-100">
         <div class="row mb-5">
-            <div class="col-md-1 pe-5">
-                <!-- <i id="sun" class="fa-solid fa-sun"></i> -->
-            </div>
-            <div class="text-center border border-1 pt-3 shadow shadow-lg col-md-11">
+            <div id="shadow" class="text-center pt-3 col-md-12">
                 <h1 id="blueColor">Full Stack Development</h1>
                 <p id="text" class="fs-5"> I use HTML5, CSS3, Bootstrap and Javascript to create functionial high quality websites</p>
             </div>
@@ -53,37 +50,22 @@
                 </div>
         </div>
         <div class="row mt-5 w-100">
-            <div class="col-md-4">
-                <div class="card w-50 py-1 d-flex justify-content-center align-items-center">
-                    <i id="skillIcon" style="color:var(--color)" class="fa-brands fa-html5"></i>
-                    <div class="card-body">
-                        <progress-bar width="100%" style="display:block"/>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card w-50 py-1" style="height:170px">
-                    <i id="skillIcon" class="fa-brands fa-html5"></i>
-                    <div class="card-body">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card w-50 py-1" style="height:115px">
-                    <i id="skillIcon" class="fa-brands fa-html5"></i>
-                    <div class="card-body">
-                    </div>
-                </div>
-            </div>
+            <SkillCard name="HTML 5" icon="fa-brands fa-html5" />
+            <SkillCard name="CSS 3" icon="fa-brands fa-css3"/>
+            <SkillCard name="Bootstrap" icon="fa-brands fa-bootstrap"/>
+            <SkillCard name="MySQL" icon="fa-solid fa-database"/>
+            <SkillCard name="Javascript" icon="fa-brands fa-js"/>
+            <SkillCard name="HTML 5" icon="fa-brands fa-vuejs" />
         </div>
     </div>
   </div>
 </template>
 
 <script>
-import ProgressBar from '../components/ProgressBar.vue'
+import SkillCard from '../components/SkillCard.vue'
+
 export default {
-    components:{ProgressBar}
+    components:{SkillCard}
 }
 </script>
 
@@ -93,7 +75,37 @@ export default {
     font-size: 4rem;
 }
 
+#shadow{
+    border-bottom: 1px solid var(--color);
+    box-shadow: var(--shadow);
+}
 
+.progressText{
+    height: 26px;
+    display: block;
+    transition: all 0.3s;
+}
+
+#progressBar{
+    display: none;
+}
+
+.card:hover .progressText{
+    display: none;
+}
+
+.card{
+    transition: all 0.4s ease;
+    background-color: rgb(var(--background-color));
+}
+
+.card:hover #progressBar{
+    display: block;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
     #sun{
         color: rgb(245, 245, 149);
         padding-bottom: 1rem;
@@ -125,7 +137,7 @@ export default {
     }
 
     #ProfessionalImage{
-        max-width: 450px;
+        max-width: 70%;
     }
 
     .underline{

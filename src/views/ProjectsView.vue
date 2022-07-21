@@ -1,8 +1,8 @@
 <template>
   <div class="projects">
-    <div class="container h-100 my-5 d-flex justify-content-center align-items-center flex-column">
+    <div class="container d-flex justify-content-center flex-column min-vh-100">
       <div class="row">
-        <h2>Here are my works</h2>
+        <h2 id="blueColor">Here are some of my projects</h2>
       </div>
       <div class="row">
         <div v-for="project in projects" :key="project.id" class="col-md-4">
@@ -40,7 +40,7 @@ export default {
         {
           id:3,
           img:'https://i.postimg.cc/52FrfRWQ/Calculator.png',
-          title:"A functional Calculator created using Javascript, using HTML and CSS",
+          title:"A functional Calculator created using Javascript, HTML and CSS",
           githubLink:'https://github.com/Reagan701/Calculator',
           netlifyLink: 'https://reagancalculator.netlify.app'
         },
@@ -65,7 +65,7 @@ export default {
         },{
           id:7,
           img:'https://i.postimg.cc/vTwP1MR6/To-doApp.png',
-          title:'An app created using Javascript that allows you to track your activities To-Do App',
+          title:'An To-Do App created using Javascript that allows you to track your activities',
           githubLink: 'https://github.com/Reagan701/toDoApp',
           netlifyLink:'https://reagan-to-do-app.netlify.app'
         }
@@ -77,6 +77,8 @@ export default {
 
 <style scoped>
 
-
+#blueColor{
+  color:var(--color)
+}
 
 </style>
