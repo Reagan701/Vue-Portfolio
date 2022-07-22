@@ -8,7 +8,7 @@
         </div>
     </nav>
 
-  <nav id="navbar" style="left:0px" class="vh-100 d-flex justify-content-between align-items-center flex-column navbar text-center navbar-expand-lg navbar-dark bg-dark">
+  <nav id="navbar" style="left:0px" class="vh-100 d-flex justify-content-between align-items-center flex-column text-center navbar-expand-lg navbar-dark bg-dark">
       <div class="d-flex justify-content-around flex-column align-items-center">
         <div id="iconsContainer" class="d-flex justify-content-center w-100 align-items-center my-5">
             <div class="d-flex align-items-center flex-column justify-content-center">
@@ -145,7 +145,7 @@ export default {
     font-size:2rem;
     color:var(--color);
     padding:10px;
-    border:2px solid var(--color);
+    /* border:2px solid var(--color); */
     border-radius:50%;
     cursor: pointer;
     box-shadow: 0 0 0 0 green;

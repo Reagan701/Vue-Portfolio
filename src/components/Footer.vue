@@ -1,13 +1,13 @@
 <template>
-    <div id="footer">
+    <div class="navbar-nav flex-column" id="footer">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-4">
                 <a target="_blank" href="https://github.com/Reagan701/"> <i class="bi bi-github"></i></a>
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
                 <a target="_blank" href="https://www.linkedin.com/in/reagan-carolussen-03054823a/"><i class="bi bi-linkedin"></i></a>
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
                 <a target="_blank" href="https://codepen.io/reagan701"><i class="fa-brands fa-codepen"></i></a>
             </div>
         </div>

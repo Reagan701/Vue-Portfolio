@@ -1,7 +1,7 @@
 <template>
   <div class="col-md-2">
                 <div class="card py-4 d-flex flex-column justify-content-between align-items-center">
-                    <span style="color:var(--color);padding-bottom:20px">{{name}}</span>
+                    <span style="user-select:none;color:var(--color);padding-bottom:20px">{{name}}</span>
                     <i id="skillIcon" style="color:var(--color)" :class="icon"></i>
                 </div>
             </div>
