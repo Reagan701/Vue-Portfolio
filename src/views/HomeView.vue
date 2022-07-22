@@ -1,10 +1,8 @@
 <template>
   <div class="home vh-100" >
-      <!-- <div class="sun"><i class="fa-solid fa-sun"></i></div> -->
-      <!-- <div class="moon"><i class="fa-solid fa-moon"></i></div> -->
-    <div style="height:100%" class="d-flex container justify-content-center align-items-center">
+    <div style="height:100%" class="d-flex flex-column container justify-content-start align-items-center">
 
-      <h1>Hi, I am Reagan <br> An Aspiring Web Developer</h1>
+      <h1 id="shadow" style="color:var(--color); margin-top:1.5rem;padding:2rem; border-radius:10px; opacity:.7;">Hi, I am Reagan <br> An Aspiring Web Developer</h1>
 
 
     </div>
@@ -29,11 +27,14 @@ export default {
   overflow: hidden;
 }
 
+#shadow{
+  box-shadow: var(--shadow);
+}
+
 .sun{
   font-size: 9rem;
   color: rgb(204, 204, 67);
   animation: float 3s linear infinite;
-  /* animation: goDown 0.8s linear infinite; */
 }
 
 .moon{
@@ -41,8 +42,6 @@ export default {
   font-size: 9rem;
   color: rgb(255, 255, 255);
   transform: translate(0,100vh);
-  /* animation: float 3s linear infinite; */
-  /* animation: goUp 0.8s linear infinite; */
 }
 
 @keyframes float {
@@ -69,7 +68,7 @@ export default {
 }
 
   .home{
-    background: linear-gradient(rgba(14, 14, 14, 0.247),rgba(110, 110, 110, 0.144)), url('../assets/fullNightTime.png');
+    background: url('../assets/fullNightTime.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

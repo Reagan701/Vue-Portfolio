@@ -3,7 +3,7 @@
     <div class="container d-flex justify-content-center flex-column min-vh-100">
             <h4 id="blueColor" class="my-1 display-1">Contact</h4>
             <h6 id="blueColor" class="fs-5">Send me a message</h6>
-            <form action="https://formspree.io/f/xayvrbqy" method="POST" class="w-100 my-5 py-5 mx-auto">
+            <form autocomplete="off" action="https://formspree.io/f/xayvrbqy" method="POST" class="w-100 my-5 py-5 mx-auto">
                 <div class="row">
                     <div class="col-md-4">
                         <div id="inputContainer" class="col-md-12">
@@ -47,7 +47,6 @@
 </template>
 
 <script>
-
 export default {
 
 }
@@ -89,6 +88,7 @@ export default {
 
 .form-control{
     border-radius: 0%;
+    resize: none;
     border-bottom: var(--border) solid var(--color);
 }
 

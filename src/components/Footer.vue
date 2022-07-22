@@ -28,9 +28,4 @@ a{
     font-size: 2rem;
 }
 
-#navbar{
-        position: fixed;
-        top:0;
-        transition: all 0.3s linear;
-    }
 </style>

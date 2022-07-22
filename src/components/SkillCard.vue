@@ -1,20 +1,16 @@
 <template>
   <div class="col-md-2">
-                <div class="card py-1 d-flex justify-content-center align-items-center">
+                <div class="card py-4 d-flex flex-column justify-content-between align-items-center">
+                    <span style="color:var(--color);padding-bottom:20px">{{name}}</span>
                     <i id="skillIcon" style="color:var(--color)" :class="icon"></i>
-                    <div class="w-100 card-body">
-                        <span class="progressText">{{name}}</span>
-                        <progress-bar widthStyle="width:80%" backgroundColor="blue"/>
-                    </div>
                 </div>
             </div>
-</template>
+</template> 
 
 <script>
-import ProgressBar from '../components/ProgressBar.vue';
+
 export default {
-    props:['name','icon'],
-    components:{ProgressBar}
+    props:['name','icon']
 }
 </script>
 

@@ -1,17 +1,15 @@
 <template>
   <div class="about">
     <div class="container d-flex justify-content-center flex-column min-vh-100">
-        <div class="row mb-5">
+        <div class="row w-100 mx-auto mb-5">
             <div id="shadow" class="text-center pt-3 col-md-12">
                 <h1 id="blueColor">Full Stack Development</h1>
                 <p id="text" class="fs-5"> I use HTML5, CSS3, Bootstrap and Javascript to create functionial high quality websites</p>
             </div>
         </div>
-        <div id="aboutRow" class="row">
+        <div id="aboutRow" class="w-100 row">
                 <div class="col-lg-6">
-                    <div class="h-100">
                         <img id="ProfessionalImage" class="img-fluid" src="../assets/Reagan1.jpg" alt="SelfImage">
-                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="ps-lg-5">
@@ -39,7 +37,7 @@
                                     
                                 </ul>
                             </div>
-                            <div class="ps-0 col-md-6">
+                            <div class="col-md-6 p-0">
                                 <ul class="d-flex flex-column justify-content-between h-100 list-unstyled">
                                     <li class="mt-3"> <i id="bodyText" class="bi bi-caret-right-fill"></i> <span id="bodyText" style="word-break:break-all">Email</span> <span id="text">: kingreggie702@gmail.com </span> </li>
                                     <li class="mt-3"> <i id="bodyText" class="bi bi-caret-right-fill"></i> <span id="bodyText">Location</span><span id="text">: South Africa  </span></li>
@@ -55,7 +53,7 @@
             <SkillCard name="Bootstrap" icon="fa-brands fa-bootstrap"/>
             <SkillCard name="MySQL" icon="fa-solid fa-database"/>
             <SkillCard name="Javascript" icon="fa-brands fa-js"/>
-            <SkillCard name="HTML 5" icon="fa-brands fa-vuejs" />
+            <SkillCard name="Vue js" icon="fa-brands fa-vuejs" />
         </div>
     </div>
   </div>
@@ -137,13 +135,17 @@ export default {
     }
 
     #ProfessionalImage{
-        max-width: 70%;
+        max-width: 76%;
+        border-bottom: 1px solid var(--color);
+    box-shadow: var(--shadow);
     }
 
-    .underline{
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
+@media screen and (max-width:768px) {
+    #ProfessionalImage{
+        max-width: 100%;
     }
+}
+
 
 .onHover{
   background-color: rgba(23, 0, 172, 0.26);

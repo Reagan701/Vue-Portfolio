@@ -18,8 +18,7 @@ let isDay = true;
 window.addEventListener("keydown",check);
 
 function check(event){
-  console.log(event.keyCode,isDay);
-  if(event.keyCode == 32){
+  if(event.keyCode == 9){
     event.preventDefault();
     if(isDay){
       isDay = !isDay;
@@ -29,18 +28,20 @@ function check(event){
       document.querySelector(':root').style.setProperty('--shadow',"0px 1rem 3rem rgba(0,0,0,0.6)");
       document.querySelector(':root').style.setProperty('--brightness',"0.7");
       document.querySelector(':root').style.setProperty('--border',"2px");
-      // document.querySelector('#sun').style.display = "none";
-      // document.querySelector('#moon').style.display = "block";
+      document.querySelector('.cursor').style.display = "block";
+      document.querySelector('#sun').style.display = "none";
+      document.querySelector('#moon').style.display = "block";
     }else{
       isDay = !isDay;
+      document.querySelector('.cursor').style.display = "none";
       document.querySelector(':root').style.setProperty('--background-color',"230, 232, 236");
       document.querySelector(':root').style.setProperty('--color',"#628aa5")
       document.querySelector(':root').style.setProperty('--text-color',"rgba(var(--bs-body-color-rgb),.75)");
       document.querySelector(':root').style.setProperty('--shadow',"0px 1rem 3rem rgba(0,0,0,0.175)");
       document.querySelector(':root').style.setProperty('--brightness',"1");
       document.querySelector(':root').style.setProperty('--border',"3px");
-      // document.querySelector('#sun').style.display = "block";
-      // document.querySelector('#moon').style.display = "none";
+      document.querySelector('#sun').style.display = "block";
+      document.querySelector('#moon').style.display = "none";
     }
   }
 }
@@ -92,7 +93,7 @@ body{
 
 :root{
   --background-color:230, 232, 236;
-  --color:#628aa5;
+  --color:#52748b;
   --text-color:rgba(var(--bs-body-color-rgb),.75);
   --shadow: 0px 1rem 3rem rgba(0,0,0,0.175);
   --brightness: 1
