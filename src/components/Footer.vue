@@ -26,6 +26,11 @@ export default {
 
 a{
     font-size: 2rem;
+    color: white;
+}
+
+a:hover{
+    color: white;
 }
 
 </style>

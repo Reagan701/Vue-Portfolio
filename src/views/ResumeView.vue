@@ -35,8 +35,8 @@ export default {
         {
           id:1,
           name: "Life Choices Academy",
-          message: "Currently studying Web-Development and Coding at Life Choices Academy",
-          date:"2022 - Present",
+          message: "Studied Web-Development and Coding at Life Choices Academy",
+          date:"2022",
           link:"https://www.lifechoices.co.za/academy",
           img:"https://i.postimg.cc/QMn92ytB/Life-Choices-Logo.png"
         },
@@ -62,7 +62,7 @@ export default {
         {
           id:1,
           name: "Virtual World",
-          message: "Job Shadowed in Grade 10 at Virtual World, where I learned how management works in professional spaces",
+          message: "Job Shadowed in Grade 10 at Virtual World",
           date:"2017",
           link:"http://www.virtualworld.capetown/",
           img:"https://static.wixstatic.com/media/ab8381_7fc19164cc184b67a0a6218c34daa214~mv2.jpg/v1/fill/w_716,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ab8381_7fc19164cc184b67a0a6218c34daa214~mv2.jpg"
@@ -70,7 +70,7 @@ export default {
         {
           id:2,
           name: "CPOA Yvonne Parfitt Place",
-          message: "Currently studying Web-Development and Coding at Life Choices Academy",
+          message: "Volunteer Work",
           date:"2017",
           img:"https://i.postimg.cc/sfbJJjGb/CPOA-removebg-preview.png",
           link:"https://cpoa.co.za/estate_property/yvonne-parfitt-place-retirement-village/"

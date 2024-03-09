@@ -25,8 +25,6 @@
                 <router-link @click="openNav" id="about" class="nav-link" to="/about"> About</router-link>
                 <router-link @click="openNav" id="resume" class="nav-link" to="/resume"> Resumè</router-link>
                 <router-link @click="openNav" id="projects" class="nav-link" to="/projects"> Projects</router-link>
-                <router-link @click="openNav" id="testimonials" class="nav-link" to="/testimonials"> Testimonials</router-link>
-                <router-link @click="openNav" id="contact" class="nav-link" to="/contact"> Contact</router-link>
             </div>
             <Footer />
     </nav>
@@ -142,7 +140,10 @@ export default {
 }
 
 #moon,#sun{
-    font-size:2rem;
+    font-size:1.5rem;
+    line-height: 1.8rem;
+    width: 3rem;
+    height: 3rem;
     color:var(--color);
     padding:10px;
     /* border:2px solid var(--color); */

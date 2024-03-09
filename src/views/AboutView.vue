@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about py-3">
     <div class="container d-flex justify-content-center flex-column min-vh-100">
         <div class="row w-100 mx-auto mb-5">
             <div id="shadow" class="text-center pt-3 col-md-12">
@@ -39,7 +39,7 @@
                             </div>
                             <div class="col-md-6 p-0">
                                 <ul class="d-flex flex-column justify-content-between h-100 list-unstyled">
-                                    <li class="mt-3"> <i id="bodyText" class="bi bi-caret-right-fill"></i> <span id="bodyText" style="word-break:break-all">Email</span> <span id="text">: kingreggie702@gmail.com </span> </li>
+                                    <li class="mt-3"> <i id="bodyText" class="bi bi-caret-right-fill"></i> <span id="bodyText" style="word-break:break-all">Email</span> <span id="text">: reagancaro701@gmail.com </span> </li>
                                     <li class="mt-3"> <i id="bodyText" class="bi bi-caret-right-fill"></i> <span id="bodyText">Location</span><span id="text">: South Africa  </span></li>
                                 </ul>
                             </div>

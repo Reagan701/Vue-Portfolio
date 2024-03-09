@@ -1,5 +1,5 @@
 <template>
-  <div class="projects">
+  <div class="projects py-4">
     <div class="container d-flex justify-content-center flex-column min-vh-100">
       <div class="row">
         <h2 id="blueColor">Here are some of my projects</h2>
